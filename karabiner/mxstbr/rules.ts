@@ -12,9 +12,9 @@ const rules: KarabinerRules[] = [
     description: "Hyper Key (⌃⌥⇧⌘)",
     manipulators: [
       {
-        description: "right_command -> Hyper Key",
+        description: "right_option -> Hyper Key",
         from: {
-          key_code: "right_command",
+          key_code: "right_option",
         },
         to: [
           {
@@ -520,7 +520,7 @@ const rules: KarabinerRules[] = [
       i: app("Slack"),
       // o: app("Preview"),
       o: app("OBS"),
-      b: app("Brave Browser"),
+      b: app("Zen"),
       open_bracket: app("Reminders"),
       n: app("Neovide"),
       m: app("Mail"),
@@ -577,26 +577,6 @@ const rules: KarabinerRules[] = [
       j: open(
         "btt://execute_assigned_actions_for_trigger/?uuid=E2BEB425-38A3-46D8-AAF8-067CA979D4FB"
       ),
-      // watusy
-      k: open(
-        "btt://execute_assigned_actions_for_trigger/?uuid=7B386F00-BDBD-448F-A413-E37952E219A7"
-      ),
-      // linkarzu.github.io
-      l: open(
-        "btt://execute_assigned_actions_for_trigger/?uuid=1893BEBE-DC99-41CC-9BE6-74B66E3BBB2C"
-      ),
-      // scripts
-      semicolon: open(
-        "btt://execute_assigned_actions_for_trigger/?uuid=9E98F83C-C4C4-4B9B-AFF7-03AAAF2939A5"
-      ),
-      // containerdata
-      y: open(
-        "btt://execute_assigned_actions_for_trigger/?uuid=27E17BF8-1B16-41BF-A7C1-3DAF6B706340"
-      ),
-      // containerdata_nfs
-      p: open(
-        "btt://execute_assigned_actions_for_trigger/?uuid=55A10BEE-B776-4D93-B5ED-024A58595D93"
-      ),
       // obsidian_main
       u: open(
         "btt://execute_assigned_actions_for_trigger/?uuid=2FF1FD5D-72C2-42CA-B6AD-05A4DC3CEE0C"
@@ -649,88 +629,6 @@ const rules: KarabinerRules[] = [
         "btt://execute_assigned_actions_for_trigger/?uuid=70963A3C-7982-4BB4-A8E0-5181EC216383"
       ),
     },
-
-    o: {
-      m: {
-        to: [
-          {
-            // Do not modify the line above the command, I use it in
-            // ~/github/dotfiles-latest/scripts/macos/mac/260-obsSceneType.sh
-            // to replace the shell command below depending on the type of
-            // recording
-            // lineid_obs_switchscene_main
-            shell_command: `export PATH="/opt/homebrew/bin:$PATH" && python3 ~/github/dotfiles-latest/scripts/macos/mac/obs/scene-switcher/py/switch_scene.py main-1-guest`,
-          },
-        ],
-      },
-      s: {
-        to: [
-          {
-            shell_command: `export PATH="/opt/homebrew/bin:$PATH" && python3 ~/github/dotfiles-latest/scripts/macos/mac/obs/scene-switcher/py/switch_scene.py starting-soon`,
-          },
-        ],
-      },
-      1: {
-        to: [
-          {
-            // lineid_obs_switchscene_guest1
-            shell_command: `export PATH="/opt/homebrew/bin:$PATH" && python3 ~/github/dotfiles-latest/scripts/macos/mac/obs/scene-switcher/py/switch_scene.py guest1-1guest`,
-          },
-        ],
-      },
-      2: {
-        to: [
-          {
-            // lineid_obs_switchscene_guest2
-            shell_command: `export PATH="/opt/homebrew/bin:$PATH" && python3 ~/github/dotfiles-latest/scripts/macos/mac/obs/scene-switcher/py/switch_scene.py `,
-          },
-        ],
-      },
-      3: {
-        to: [
-          {
-            // lineid_obs_switchscene_guest3
-            shell_command: `export PATH="/opt/homebrew/bin:$PATH" && python3 ~/github/dotfiles-latest/scripts/macos/mac/obs/scene-switcher/py/switch_scene.py `,
-          },
-        ],
-      },
-      b: {
-        to: [
-          {
-            shell_command: `export PATH="/opt/homebrew/bin:$PATH" && python3 ~/github/dotfiles-latest/scripts/macos/mac/obs/scene-switcher/py/switch_scene.py be-right-back`,
-          },
-        ],
-      },
-      t: {
-        to: [
-          {
-            shell_command: `export PATH="/opt/homebrew/bin:$PATH" && python3 ~/github/dotfiles-latest/scripts/macos/mac/obs/scene-switcher/py/switch_scene.py tech-difficulties`,
-          },
-        ],
-      },
-      z: {
-        to: [
-          {
-            shell_command: `export PATH="/opt/homebrew/bin:$PATH" && python3 ~/github/dotfiles-latest/scripts/macos/mac/obs/scene-switcher/py/switch_scene.py zoom-main`,
-          },
-        ],
-      },
-      //   k: {
-      //     to: [
-      //       {
-      //         shell_command: `~/opt/lgtv/bin/python3 ~/opt/lgtv/bin/lgtv MyTV volumeUp ssl`,
-      //       },
-      //     ],
-      //   },
-      g: {
-        to: [
-          {
-            //lineid_obs_switchscene_guest
-            shell_command: `export PATH="/opt/homebrew/bin:$PATH" && python3 ~/github/dotfiles-latest/scripts/macos/mac/obs/scene-switcher/py/switch_scene.py guests-all-notes-right`,
-          },
-        ],
-      },
-    },
     // e = "etmux" - This is to SSH to devices
     // video that explains how this works below
     // https://youtu.be/MCbEPylDEWU
@@ -779,7 +677,6 @@ const rules: KarabinerRules[] = [
       k: open("raycast://extensions/mblode/google-search/index"),
       l: open("raycast://extensions/raycast/file-search/search-files"),
       semicolon: open("raycast://extensions/vishaltelangre/google-drive/index"),
-      // quote: open("raycast://extensions/mathieudutour/wolfram-alpha/index"),
       y: open(
         "raycast://extensions/tonka3000/youtube/search-videos?arguments=%7B%22query%22%3A%22%22%7D"
       ),
@@ -789,9 +686,6 @@ const rules: KarabinerRules[] = [
       o: open("raycast://extensions/raycast/github/search-repositories"),
       p: open("raycast://extensions/nhojb/brew/search"),
       h: open("raycast://extensions/mattisssa/spotify-player/search"),
-      e: open(
-        "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
-      ),
     },
 
     // s = "System" or "Service"
