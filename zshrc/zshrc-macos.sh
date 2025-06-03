@@ -254,17 +254,7 @@ alias vl='NVIM_APPNAME=lazyvim nvim'
 # https://youtu.be/W3hgsMoUcqo
 # alias nvim='NVIM_APPNAME=nvim nvim'
 
-# https://github.com/antlr/antlr4/blob/master/doc/getting-started.md#unix
-# Add antlr-4.13.1-complete.jar to your CLASSPATH
-export CLASSPATH=".:/usr/local/lib/antlr-4.13.1-complete.jar:$CLASSPATH"
-# Create an alias for running ANTLR's TestRig
-alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.13.1-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
-alias grun='java -Xmx500M -cp "/usr/local/lib/antlr-4.13.1-complete.jar:$CLASSPATH" org.antlr.v4.gui.TestRig'
-
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-
-# Added this for my blogpost files that are in a mounted network drive
-export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 
 # Add templ to PATH if it is installed
 # templ is installed with

@@ -19,12 +19,3 @@
 username_suffix="h"
 
 dotfiles_latest="j"
-watusy="k"
-github_nfs="l"
-scripts="\;"
-obsidian_main="u"
-php="i"
-containerdata_public="o"
-containerdata_nfs="p"
-containerdata="y"
-go="["

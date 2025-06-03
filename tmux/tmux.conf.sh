@@ -269,8 +269,6 @@ script_selector="~/github/dotfiles-latest/scripts/macos/mac/misc/240-systemTask.
 # Don't use C-z, not sure what its for
 unbind C-u
 bind-key -r C-u run-shell "$tmux_sessionizer ~/github/dotfiles-latest"
-unbind C-i
-bind-key -r C-i run-shell "$tmux_sessionizer ~/github/watusy"
 unbind C-o
 # bind-key -r C-o run-shell "$tmux_sessionizer ~/github/linkarzu.github.io"
 bind-key -r C-o run-shell "$tmux_sessionizer /System/Volumes/Data/mnt/github_nfs/linkarzu.github.io"
@@ -286,12 +284,6 @@ unbind C-h
 bind-key -r C-h run-shell "$tmux_sessionizer ~"
 unbind C-m
 bind-key -r C-m run-shell "$tmux_sessionizer ~/github/containerdata-public"
-unbind 3
-bind-key -r 3 run-shell "$tmux_sessionizer ~/github/go"
-# Leaving this in quotes because iCloud dir has a white space
-unbind C-g
-bind-key -r C-g run-shell "$tmux_sessionizer ~/github/php"
-# bind-key -r C-g run-shell "$tmux_sessionizer '$HOME/Library/Mobile Documents/com~apple~CloudDocs/github/macos-setup'"
 
 unbind C-w
 bind-key -r C-w run-shell "$tmux_sshonizer_agen docker3"
