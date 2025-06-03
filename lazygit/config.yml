@@ -30,7 +30,7 @@ os:
   #
   # If this is set to true, when editing a file from lazygit, it opens it in the
   # terminal, instead of Neovide, and you cannot go back to lazygit
-  editInTerminal: false
+  editInTerminal: true
 
   # # This is the snacks neovim plugin default option, if you want to use it,
   # # comment all the options above
