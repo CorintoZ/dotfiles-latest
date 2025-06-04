@@ -75,21 +75,6 @@ if command -v sketchybar &>/dev/null; then
     yabai -m config bottom_padding 0
     yabai -m config left_padding 0
     yabai -m config right_padding 230
-    # # For videos thumbnails
-    # yabai -m config top_padding 400
-    # yabai -m config bottom_padding 20
-    # yabai -m config left_padding 500
-    # yabai -m config right_padding 100
-
-    # For youtube thumbnails
-    # yabai -m config right_padding 500
-
-    # For youtube posts and neomemes
-    # yabai -m config right_padding 800
-
-    # For shorts
-    # yabai -m config bottom_padding 400
-  fi
 else
   yabai -m config top_padding 02
   yabai -m config bottom_padding 00

@@ -7,7 +7,7 @@
 # yabai -m query --windows | jq -r '.[].app'
 
 # apps_transparent="(Spotify|kitty|Neovide|Google Chrome|Code|WezTerm|Ghostty)"
-apps_transparent="(Neovide|Code)"
+apps_transparent="(Neovide|Code|Zen)"
 
 display_resolution=$(system_profiler SPDisplaysDataType | grep Resolution)
 apps_mgoff_below="(Calculator|iStat Menus|Hammerspoon|BetterDisplay|GIMP|Notes|Activity Monitor|App StoreSoftware Update|TestRig|Gemini|Raycast|OBS Studio|Microsoft Edge|Cisco Packet Tracer|Stickies|kitty|ProLevel|Photo Booth|Hand Mirror|SteerMouse|remote-viewer|Jitsi Meet|DaVinci Resolve)"
